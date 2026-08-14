@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login - Green Grocers</title>
+</head>
+<body bgcolor="#004d25" text="#ffffff" link="#ffffff" vlink="#ffffff" alink="#ffffff">
+
+    <main>
+        <h1>Customer Login</h1>
+        <p>Welcome back! Please enter your details to access your account and fresh deals.</p>
+
+        <form action="#" method="POST">
+            <table border="0" cellpadding="8" cellspacing="0">
+                
+                <tr>
+                    <td><label for="username">Email / Phone*</label></td>
+                    <td>
+                        <input type="text" id="username" name="username" placeholder="Enter email or phone number" size="35" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password*</label></td>
+                    <td>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" size="35" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="remember_me" name="remember_me">
+                        <label for="remember_me">Remember me on this device</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label>Verification*</label></td>
+                    <td>
+                        <table border="1" bgcolor="#ffffff" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <font color="#000000">
+                                        <input type="checkbox" id="robot" name="robot" required>
+                                        <label for="robot">I'm not a robot</label>
+                                    </font>
+                                </td>
+                                <td align="center">
+                                    <font color="#555555" size="2">
+                                        reCAPTCHA<br>
+                                        <a href="#"><font color="#0066cc">Privacy</font></a> - 
+                                        <a href="#"><font color="#0066cc">Terms</font></a>
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+
+            <hr align="left" width="450">
+
+            <p>
+                <input type="submit" value="LOG IN">
+            </p>
+
+            <p>
+                <a href="#">Forgot your password?</a>
+            </p>
+
+            <p>
+                Don't have an account? <a href="#">Register for free</a>
+            </p>
+
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Green Grocers</title>
+</head>
+<body bgcolor="#004d25" text="#ffffff">
+
+    <main>
+        <h1>Welcome Back, Customer!</h1>
+        <p>Manage your account, view active orders, and update your personal details here.</p>
+
+        <hr align="left" width="600">
+
+        <table border="0" cellpadding="5" cellspacing="0">
+            <tr bgcolor="white">
+                <td><a href="#orders">My Orders</a> | </td>
+                <td><a href="#addresses">Saved Addresses</a> | </td>
+                <td><a href="#wishlist">Wishlist</a> | </td>
+                <td><a href="#profile">Profile Details</a> | </td>
+                <td><a href="#logout">Logout</a></td>
+            </tr>
+        </table>
+
+        <hr align="left" width="600">
+
+        <section id="orders">
+            <h2>📦 Recent Orders</h2>
+            <table border="1" bgcolor="#ffffff" cellpadding="8" cellspacing="0">
+                <tr bgcolor="#003319">
+                    <th><font color="#ffffff">Order ID</font></th>
+                    <th><font color="#ffffff">Date</font></th>
+                    <th><font color="#ffffff">Items</font></th>
+                    <th><font color="#ffffff">Total</font></th>
+                    <th><font color="#ffffff">Status</font></th>
+                    <th><font color="#ffffff">Action</font></th>
+                </tr>
+                <tr>
+                    <td><font color="#000000">#GG-1042</font></td>
+                    <td><font color="#000000">12 Aug 2026</font></td>
+                    <td><font color="#000000">Milk, Bread, Fresh Apples</font></td>
+                    <td><font color="#000000">Rs. 1,250</font></td>
+                    <td><font color="#008000"><b>Out for Delivery</b></font></td>
+                    <td><font color="#0066cc">Track</font></td>
+                </tr>
+                <tr>
+                    <td><font color="#000000">#GG-0988</font></td>
+                    <td><font color="#000000">05 Aug 2026</font></td>
+                    <td><font color="#000000">Atta 10kg, Cooking Oil 5L</font></td>
+                    <td><font color="#000000">Rs. 4,800</font></td>
+                    <td><font color="#000000">Delivered</font></td>
+                    <td><font color="#0066cc">Re-order</font></td>
+                </tr>
+            </table>
+        </section>
+
+        <br>
+
+        <section id="profile">
+            <h2>👤 Personal Details</h2>
+            <form action="#" method="POST">
+                <table border="0" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td><label for="full-name">Full Name:</label></td>
+                        <td><input type="text" id="full-name" name="full_name" value="Maryam Shehzad" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="email" id="email" name="email" value="example@email.com" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="text" id="phone" name="phone" value="+92 300 1234567" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="new-pass">New Password:</label></td>
+                        <td><input type="password" id="new-pass" name="new_password" placeholder="Leave blank to keep same" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="UPDATE PROFILE"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <br>
+
+        <section id="addresses">
+            <h2>📍 Saved Delivery Address</h2>
+            <form action="#" method="POST">
+                <table border="0" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td valign="top"><label for="address">Primary Address:</label></td>
+                        <td>
+                            <textarea id="address" name="address" rows="3" cols="32">House #123, Block 4, Gulshan-e-Iqbal, Karachi</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="SAVE ADDRESS"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+    </main>
+
+    <br><hr align="left" width="600">
+
+    <footer>
+        <p>&copy; 2026 Green Grocers. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
